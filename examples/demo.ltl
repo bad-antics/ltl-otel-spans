@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_otel_spans
+
+import std::io
+use ltl_otel_spans as lib
+
+fn main() {
+    io::println("ltl_otel_spans demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
